@@ -1,4 +1,7 @@
 # Petful Client
+[live-app] https://petful-theta.vercel.app/pets
+[server-repo] https://github.com/blakeifitz/petful-api
+
 
 Petful was created to simulate using a queue data-structure for a first come first serve pet rescue. When entering the adoption page you will see a list of people waiting to adopt, and the pets that are being adopted. You can enter your name to join waiting to list adopt either a cat or a dog, but it must be the one that has been there the longest.
 
