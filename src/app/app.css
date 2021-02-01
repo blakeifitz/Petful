@@ -1,0 +1,105 @@
+body {
+  text-align: center;
+  font-family: helvetica, arial;
+  margin: 0;
+  background-color: rgba(110, 85, 136, 0.6);
+}
+
+main {
+  min-height: 80vh;
+}
+
+header,
+footer {
+  background-color: rgb(110, 85, 136);
+  color: white;
+  padding: 15px;
+}
+
+header a,
+header a:visited,
+footer a,
+footer a:visited {
+  color: white;
+}
+
+footer a {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+header a:hover,
+footer a:hover {
+  background-color: rgb(86, 72, 148);
+}
+
+h1 {
+  font-size: 55px;
+  margin: 0px auto;
+}
+h3 {
+  text-decoration: underline;
+}
+.group {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+}
+
+ol {
+  list-style-type: none;
+  padding-right: 50px;
+}
+
+.item {
+  flex: 1;
+}
+
+.item-wide {
+  flex: 1.5;
+}
+
+legend {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  display: inline block;
+  margin: 5px auto;
+  font-weight: bold;
+  background-color: rgb(164, 155, 204);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(186, 116, 204);
+  cursor: pointer;
+}
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
+  h2 {
+    width: 60%;
+    margin: 15px auto;
+  }
+}
