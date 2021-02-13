@@ -56,6 +56,7 @@ export class AdoptPage extends Component {
     if (!petType) {
       petType = Math.random() >= 0.5 ? 'cats' : 'dogs';
     } else {
+      alert(`Thank you for adopting one of our ${petType}!`);
       this.adoptInterval();
     }
 
@@ -85,12 +86,12 @@ export class AdoptPage extends Component {
   adoptInterval() {
     this.interval = setInterval(() => {
       this.deletePet();
-    }, 3000);
+    }, 5000);
   }
   checkLine() {
     if (this.state.people[0] === this.state.user) {
       clearInterval(this.interval);
-      console.log('FRONT OF THE LINE');
+      alert('Your turn to pick!');
     }
   }
   render() {
@@ -104,7 +105,7 @@ export class AdoptPage extends Component {
         {this.state.people[0] === this.state.user ? (
           <div>
             <button onClick={() => this.deletePet('cats')}>Adopt Cat</button>{' '}
-            <button onClick={() => this.deletePet('dogs')}>Adopt dog</button>
+            <button onClick={() => this.deletePet('dogs')}>Adopt Dog</button>
           </div>
         ) : (
           <WaitingList
